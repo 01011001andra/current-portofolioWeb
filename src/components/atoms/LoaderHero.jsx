@@ -12,7 +12,7 @@ const LoaderHero = () => {
           delay: 2.5,
         },
       }}
-      className="flex flex-col items-center justify-center min-h-screen leading-[0] w-full text-white fixed bg-black z-10"
+      className="flex flex-col items-center justify-center min-h-screen leading-[0] w-full text-white fixed bg-black z-20"
     >
       <motion.span
         initial={{ opacity: 0 }}

@@ -40,18 +40,9 @@ const About = () => {
       <div className="w-full max-w-6xl mx-auto 2xl:max-w-7xl">
         <h1 className={`${styles.sectionHeadText}`}>ABOUT ME</h1>
         <p className={`${styles.sectionSubText}`}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-          consequuntur velit voluptates facilis, rem pariatur quas
-          necessitatibus labore maxime expedita commodi? Vel expedita quaerat
-          vitae autem eveniet dolor tempora cumque qui quibusdam deserunt
-          praesentium soluta nam, eligendi eos, harum sapiente minima obcaecati
-          sequi laboriosam magnam quia! Ipsum amet adipisci veritatis. Lorem
-          ipsum dolor, sit amet consectetur adipisicing elit. Amet vero nobis
-          fugiat quasi sit maxime molestiae. Amet minus atque repudiandae ab ea
-          necessitatibus! Eum, obcaecati, accusantium enim laudantium doloribus
-          dolores porro perferendis laborum commodi veritatis nemo! Possimus
-          esse, perferendis eos omnis qui sit quos maiores atque itaque voluptas
-          iste maxime!
+          Halo! Saya Yandra Muslim, seorang mahasiswa berusia 20 tahun yang
+          tengah menempuh studi dalam bidang Teknik Informatika di Politeknik
+          Negeri Batam. Untuk saat ini saya memfokuskan diri saya untuk belajar web developer tepatnya frontend developer, yang dimana skill yang telah saya kuasai yaitu:
         </p>
         <div className="flex flex-wrap justify-center gap-5 py-5">
           {contentCard.map((item, index) => {

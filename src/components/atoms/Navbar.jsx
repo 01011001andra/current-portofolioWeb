@@ -29,71 +29,137 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed flex items-center w-full h-20 text-white xl:hidden">
-        <div className="flex items-center justify-between w-full px-6 mx-auto max-w-7xl">
-          <h1 className="text-2xl font-semibold">MusYan</h1>
-          <div className="relative" ref={dropdownRef}>
-            {nav ? (
+      {/* {nav ? (
+               
+               ) : (
+                 <div>
+                   <RiCloseLine
+                     size={45}
+                     onClick={handleClick}
+                     className="cursor-pointer"
+                   />
+                   <div className="absolute flex flex-col border rounded-lg bg-primary right-4 w-44 top-14">
+                     <Link
+                       activeClass="active"
+                       to="hero"
+                       spy={true}
+                       smooth={true}
+                       duration={500}
+                       className="px-4 py-4 transition-all duration-500 hover:bg-violet-600"
+                     >
+                       Home
+                     </Link>
+                     <Link
+                       activeClass="active"
+                       to="about"
+                       spy={true}
+                       smooth={true}
+                       duration={500}
+                       className="px-4 py-4 transition-all duration-500 hover:bg-violet-600"
+                     >
+                       About
+                     </Link>
+                     <Link
+                       activeClass="active"
+                       to="project"
+                       spy={true}
+                       smooth={true}
+                       duration={500}
+                       className="px-4 py-4 transition-all duration-500 hover:bg-violet-600"
+                     >
+                       Portofolio
+                     </Link>
+                     <Link
+                       activeClass="active"
+                       to="contact"
+                       spy={true}
+                       smooth={true}
+                       duration={500}
+                       className="px-4 py-4 transition-all duration-500 hover:bg-violet-600"
+                     >
+                       Contact
+                     </Link>
+                   </div>
+                 </div>
+               )} */}
+      {nav ? (
+        <nav className="fixed z-10 flex items-center w-full h-20 text-white xl:hidden">
+          <div className="flex items-center justify-between w-full px-6 mx-auto max-w-7xl">
+            <h1 className="text-2xl font-semibold">MusYan</h1>
+            <div className="relative" ref={dropdownRef}>
               <BiMenuAltRight
                 size={45}
                 onClick={handleClick}
                 className="cursor-pointer"
               />
-            ) : (
-              <div>
-                <RiCloseLine
-                  size={45}
-                  onClick={handleClick}
-                  className="cursor-pointer"
-                />
-                <div className="absolute flex flex-col border rounded-lg bg-primary right-4 w-44 top-14">
-                  <Link
-                    activeClass="active"
-                    to="hero"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    className="px-4 py-4 transition-all duration-500 hover:bg-violet-600"
-                  >
-                    Home
-                  </Link>
-                  <Link
-                    activeClass="active"
-                    to="about"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    className="px-4 py-4 transition-all duration-500 hover:bg-violet-600"
-                  >
-                    About
-                  </Link>
-                  <Link
-                    activeClass="active"
-                    to="project"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    className="px-4 py-4 transition-all duration-500 hover:bg-violet-600"
-                  >
-                    Portofolio
-                  </Link>
-                  <Link
-                    activeClass="active"
-                    to="contact"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    className="px-4 py-4 transition-all duration-500 hover:bg-violet-600"
-                  >
-                    Contact
-                  </Link>
-                </div>
-              </div>
-            )}
+            </div>
           </div>
-        </div>
-      </nav>
-      <nav className="fixed flex-col items-center justify-center hidden min-h-screen gap-12 pl-6 xl:flex">
+        </nav>
+      ) : (
+        <>
+          <div className="fixed z-10 flex items-center justify-center w-full h-screen text-white bg-primary/60">
+            <div className="flex flex-col gap-2" ref={dropdownRef}>
+              <div className="flex gap-2">
+                <Link
+                  onClick={handleClick}
+                  activeClass="active"
+                  to="hero"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  className="flex flex-col items-center justify-center w-24 h-24 transition-all duration-300 rounded-xl hover:bg-violet-700 hover:text-white hover:scale-125"
+                >
+                  <AiOutlineHome size={35} className="text-secondary" />
+                  Home
+                </Link>
+                <Link
+                  onClick={handleClick}
+                  activeClass="active"
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  className="flex flex-col items-center justify-center w-24 h-24 transition-all duration-300 rounded-xl hover:scale-125 hover:bg-violet-700 hover:text-white"
+                >
+                  <AiOutlineInfo size={35} className="text-secondary" />
+                  About Me
+                </Link>
+              </div>
+              <div className="flex gap-2">
+                <Link
+                  onClick={handleClick}
+                  activeClass="active"
+                  to="project"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  className="flex flex-col items-center justify-center w-24 h-24 transition-all duration-300 rounded-xl hover:scale-125 hover:bg-violet-700 hover:text-white"
+                >
+                  <CgWebsite size={35} className="text-secondary" />
+                  Experience
+                </Link>
+                <Link
+                  onClick={handleClick}
+                  activeClass="active"
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  className="flex flex-col items-center justify-center w-24 h-24 transition-all duration-300 rounded-xl hover:bg-violet-700 hover:text-white hover:scale-125"
+                >
+                  <MdOutlineConnectWithoutContact
+                    size={35}
+                    className="text-secondary"
+                  />
+                  Contact Me
+                </Link>
+              </div>
+            </div>
+          </div>
+        </>
+      )}
+
+      <nav className="fixed flex-col items-center justify-center hidden min-h-screen gap-12 pl-4 bg-primary xl:flex">
         <Link
           activeClass="active"
           to="hero"

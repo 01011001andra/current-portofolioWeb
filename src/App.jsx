@@ -23,7 +23,7 @@ const App = () => {
         className="fixed top-0 left-0 right-0 z-50 h-3 origin-left bg-gradient-to-r via-violet-700 from-violet-600 to-violet-400"
         style={{ scaleX }}
       />
-      <div className="w-full min-h-screen bg-primary">
+      <div className="absolute w-full min-h-screen bg-primary">
         <Navbar />
         <Hero />
         <About />
