@@ -29,59 +29,6 @@ const Navbar = () => {
 
   return (
     <>
-      {/* {nav ? (
-               
-               ) : (
-                 <div>
-                   <RiCloseLine
-                     size={45}
-                     onClick={handleClick}
-                     className="cursor-pointer"
-                   />
-                   <div className="absolute flex flex-col border rounded-lg bg-primary right-4 w-44 top-14">
-                     <Link
-                       activeClass="active"
-                       to="hero"
-                       spy={true}
-                       smooth={true}
-                       duration={500}
-                       className="px-4 py-4 transition-all duration-500 hover:bg-violet-600"
-                     >
-                       Home
-                     </Link>
-                     <Link
-                       activeClass="active"
-                       to="about"
-                       spy={true}
-                       smooth={true}
-                       duration={500}
-                       className="px-4 py-4 transition-all duration-500 hover:bg-violet-600"
-                     >
-                       About
-                     </Link>
-                     <Link
-                       activeClass="active"
-                       to="project"
-                       spy={true}
-                       smooth={true}
-                       duration={500}
-                       className="px-4 py-4 transition-all duration-500 hover:bg-violet-600"
-                     >
-                       Portofolio
-                     </Link>
-                     <Link
-                       activeClass="active"
-                       to="contact"
-                       spy={true}
-                       smooth={true}
-                       duration={500}
-                       className="px-4 py-4 transition-all duration-500 hover:bg-violet-600"
-                     >
-                       Contact
-                     </Link>
-                   </div>
-                 </div>
-               )} */}
       {nav ? (
         <nav className="fixed z-10 flex items-center w-full h-20 text-white xl:hidden">
           <div className="flex items-center justify-between w-full px-6 mx-auto max-w-7xl">

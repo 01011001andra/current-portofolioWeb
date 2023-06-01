@@ -67,7 +67,7 @@ const Contact = () => {
                   name="nama_lengkap"
                   id="nama_lengkap"
                   placeholder="Masukkan Nama Lengkap"
-                  className="w-full border border-[#e0e0e0] bg-white py-2 px-3  outline-none focus:border-[#6A64F1] focus:shadow-md dark:text-black"
+                  className="w-full border border-[#e0e0e0] bg-white py-2 px-3 text-xs md:text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md invalid:text-red-500 dark:text-black"
                   required
                 />
               </div>
@@ -135,7 +135,7 @@ const Contact = () => {
               My Social Media
             </h1>
             <div className="flex flex-row gap-10 mb-36 ">
-              <div>
+              <div className="flex items-center justify-center">
                 <a
                   href="https://www.linkedin.com/in/yandra-muslim-496822244/"
                   target="_blank"
@@ -147,7 +147,7 @@ const Contact = () => {
                   />
                 </a>
               </div>
-              <div>
+              <div className="flex items-center justify-center">
                 <a
                   href="https://mail.google.com/mail/?view=cm&to=yandrayt1@gmail.com"
                   target="_blank"
@@ -160,7 +160,7 @@ const Contact = () => {
                 </a>
               </div>
 
-              <div>
+              <div className="flex items-center justify-center">
                 <a
                   href="https://wa.me/0895611861777"
                   target="_blank"
@@ -172,6 +172,18 @@ const Contact = () => {
                   />
                 </a>
               </div>
+              <div className="flex items-center justify-center">
+                <a
+                  href="https://github.com/01011001andra?tab=repositories"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+                    className="w-12 h-12 transition-all duration-300 rounded-full hover:scale-125"
+                  />
+                </a>
+              </div>
               <div>
                 <a
                   href="https://www.instagram.com/yandramuslim/"
@@ -179,8 +191,8 @@ const Contact = () => {
                   rel="noopener noreferrer"
                 >
                   <img
-                    src="https://www.unipile.com/wp-content/uploads/2022/09/logo_instagram.png"
-                    className="w-12 h-12 transition-all duration-300 hover:scale-125"
+                    src="https://parspng.com/wp-content/uploads/2021/09/instagram-6-600x600.png"
+                    className="transition-all duration-300 w-14 h-14 hover:scale-125"
                   />
                 </a>
               </div>

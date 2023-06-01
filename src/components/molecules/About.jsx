@@ -35,6 +35,7 @@ const About = () => {
         "https://img.uxwing.com/wp-content/themes/uxwing/download/brands-social-media/redux-icon.png",
     },
   ];
+
   return (
     <div name="about" className="w-full min-h-screen px-4">
       <div className="w-full max-w-6xl mx-auto 2xl:max-w-7xl">
@@ -42,7 +43,9 @@ const About = () => {
         <p className={`${styles.sectionSubText}`}>
           Halo! Saya Yandra Muslim, seorang mahasiswa berusia 20 tahun yang
           tengah menempuh studi dalam bidang Teknik Informatika di Politeknik
-          Negeri Batam. Untuk saat ini saya memfokuskan diri saya untuk belajar web developer tepatnya frontend developer, yang dimana skill yang telah saya kuasai yaitu:
+          Negeri Batam. Untuk saat ini saya memfokuskan diri saya untuk belajar
+          web developer tepatnya frontend developer, yang dimana skill yang
+          telah saya kuasai yaitu:
         </p>
         <div className="flex flex-wrap justify-center gap-5 py-5">
           {contentCard.map((item, index) => {
