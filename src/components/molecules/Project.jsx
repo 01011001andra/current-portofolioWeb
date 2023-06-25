@@ -25,15 +25,15 @@ const Project = () => {
           icon={<FaReact />}
         >
           <div className="text-black">
-            <h3 className="text-xl font-bold">Magang</h3>
+            <h3 className="text-xl font-bold">Studi Independen</h3>
             <h4 className="vertical-timeline-element-subtitle">
               Infinite Learning
             </h4>
             <p className="pb-3 ">
-              Saya magang menjadi web developer selama 4 bulan di Infinite
-              Learning, dan bersama team kami mengerjakan makro project dengan
-              output frontend, dan massive project dengan output frontend dan
-              backend.
+              Saya melakukan studi independen menjadi web developer selama 4
+              bulan di Infinite Learning, dan bersama team kami mengerjakan
+              makro project dengan output frontend, dan massive project dengan
+              output frontend dan backend.
             </p>
           </div>
           <img src="./inpinit.jpg" alt="sdf" />
@@ -54,16 +54,20 @@ const Project = () => {
             <h4 className="vertical-timeline-element-subtitle">
               Massive Project
             </h4>
-            <p>On Going ...</p>
+            <p>
+              Meddycine TeddyMeddy membantu pengguna untuk mencari informasi
+              dengan lebih mudah dan efisien serta memantau informasi obat &
+              berita tentang kesehatan dengan baik.
+            </p>
             <a
-              href="https://redhelp.my.id"
+              href="https://meddy-eta.vercel.app/"
               target={"_blank"}
               className="underline text-primary hover:text-violet-600"
             >
               Lihat
             </a>
           </div>
-          <img src="./inpinit.jpg" alt="sdf" className="pt-3" />
+          <img src="./meddy.png" alt="sdf" className="pt-3" />
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
