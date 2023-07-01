@@ -55,12 +55,12 @@ const Project = () => {
               Massive Project
             </h4>
             <p>
-              Meddycine TeddyMeddy membantu pengguna untuk mencari informasi
+              Medicine TeddyMeddy membantu pengguna untuk mencari informasi
               dengan lebih mudah dan efisien serta memantau informasi obat &
               berita tentang kesehatan dengan baik.
             </p>
             <a
-              href="https://meddy-eta.vercel.app/"
+              href="http://vijayasena.marsanix.com/"
               target={"_blank"}
               className="underline text-primary hover:text-violet-600"
             >
